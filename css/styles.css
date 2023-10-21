@@ -1,0 +1,40 @@
+:root{
+  --bg-dark: #1B2C33;
+  --border-dark: #0F1C23;
+  --header-dark: #214043;
+}
+body{
+ margin: 0;
+ padding:0;
+ box-sizing: border-box;
+ font-size: 24px;
+ background-color: var(--bg-dark);
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+.conteiner-app{
+  max-width: 450px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+header{
+  position: relative;
+  height: 100px;
+  background-color: var(--header-dark);
+  border: 1px solid var(--border-dark);
+}
+header .navigator{
+  position: absolute;
+  height: 40px;
+  width: 100%;
+  bottom: 0;
+}
+header .app-title h1{
+  padding: 15px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1em;
+}
