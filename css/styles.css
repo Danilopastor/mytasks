@@ -1,40 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100&display=swap');
 :root{
-  --bg-dark: #1B2C33;
-  --border-dark: #0F1C23;
-  --header-dark: #214043;
+  --bg-global: #0e0e0eff;
+  --bg-app: #4044c9ff;
+  --bg-white: #ffffffff;
+  --color-white: #fffefeff;
+  --color-primary: #7c7c7cff;
+  --color-bold: #222222ff;
+}
+*,html{
+  padding: 0;
+  margin: 0;
 }
 body{
  margin: 0;
  padding:0;
+ font-family: 'Roboto', sans-serif;
  box-sizing: border-box;
  font-size: 24px;
- background-color: var(--bg-dark);
-}
-*{
-  padding: 0;
-  margin: 0;
+ background-color: var(--bg-global);
 }
 .conteiner-app{
   max-width: 450px;
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
+  background-color: var(--bg-app);
 }
 header{
   position: relative;
   height: 100px;
-  background-color: var(--header-dark);
-  border: 1px solid var(--border-dark);
+  padding: 0 20px;
+  padding-top: 20px;
 }
-header .navigator{
-  position: absolute;
-  height: 40px;
+header .icons-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  bottom: 0;
+  height: 45px;
 }
-header .app-title h1{
-  padding: 15px;
-  color: #fff;
-  font-weight: 400;
-  font-size: 1em;
+header .icons-top i{
+  color: var(--color-white);
+}
+header .icons-top p{
+  color: var(--color-white);
+  font-size: 0.6em;
+}
+header .info{
+  margin-top: 40px;
+}
+header .info .message-today h1{
+  font-size: 1.2em;
+  padding-bottom: 5px;
+  color: var(--color-white);
+}
+header .info .message-today p{
+  font-size: 0.5em;
+  color: var(--color-white);
+}
+.inner-app{
+  width: 100%;
+  height: 72vh;
+  background-color: var(--bg-white);
+  position: absolute;
+  bottom: 0;
+  border-top-left-radius: 40px;
+}
+.actions .btn-add{
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  color: var(--color-white);
+  background-color: var(--bg-app);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }
