@@ -60,7 +60,7 @@ header .info .message-today p{
 }
 .inner-app{
   width: 100%;
-  height: 72vh;
+  height: 70vh;
   background-color: var(--bg-white);
   position: absolute;
   bottom: 0;
